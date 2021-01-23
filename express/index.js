@@ -21,6 +21,8 @@ app.get("/blog/:nome/:sobrenome/:cor", function(req,res){
     res.send("Ola "+ req.params.nome) //O req desse jeito, vai criar uma resposta em JSON
 })
 
+// Só se pode usar a funcao SEND uma unica vez por rota
+
 /*Res é a resposta que você vai enviar ao cliente, pode ser objeto, mensagem ou até mesmo 
 arquivo HTML*/
 
