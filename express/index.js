@@ -2,7 +2,7 @@ const express = require("express")
 const app = express() // Copia inteira do framework está contido na variável agr
 
 app.get('/', function(req, res){ // Get-> Define a Rota
-    res.send("Seja Bem Vindo ao meu app!")
+    res.sendFile(__dirname + '/html/index.html')
 })
 
 app.get("/sobre", function(req,res){
